@@ -1,0 +1,108 @@
+body{
+    background-color: var(--background-primary-color);
+    height: 100vh;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--background-secondary-color);
+    display: flex;
+    justify-content: flex-end;
+    height: 600px;
+    width: 400px;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 80px;
+    margin: 12px;
+}
+
+.placeholder {
+    color: var(--data-color); 
+}
+
+.date-container{
+    position: relative;
+    margin: 0 8px;
+}
+
+.name-date{
+    color: var(--date-color);
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 60px;
+    font-style: normal;
+}
+
+.date{
+    font-weight: bold;
+    color: var(--primary-text-color);
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.date:hover, .date:focus{
+    border-color: var(--secondary-text-color);
+    outline: none;
+}
+
+.line-break{
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.line-break .btn-date{
+    background-color: var(--secondary-text-color);
+    position: absolute;
+    padding: 16px;
+    border-radius: 100%;
+    bottom: -40px;
+    left: 140px;
+    cursor: pointer;
+}
+
+.line-break .btn-date:hover{
+    background-color: var(--primary-text-color);
+}
+
+.show-date{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 22px;
+    padding: 0 20px;
+}
+
+.number-date{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--secondary-text-color);
+}
+
+.date-text{
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.error{
+    border-color: var(--error-color);
+    color: var(--error-color);
+}
+
+.error-disabled{
+    color: var(--error-color);
+    display: none;
+    position: absolute;
+    top: 60px;
+    font-size: 14px;
+    width: 88px;
+    left: 12px;
+    line-break: normal;
+}
