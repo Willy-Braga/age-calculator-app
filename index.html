@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Age calculator app</title>
+
+    <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+
+    <script defer src="src/js/script.js"></script>
+</head>
+<body>
+    <section class="container">
+        <div class="date-container">
+
+            <span class="name-date ">DAY</span>
+            <span class="date placeholder" contenteditable="true">DD</span>
+            <span class="error-disabled">This field is required</span>
+
+            <span class="name-date">MONTH</span>
+            <span class="date placeholder" contenteditable="true">MM</span>
+            <span class="error-disabled">This field is required</span>
+
+            <span class="name-date">YEAR</span>
+            <span class="date placeholder" contenteditable="true">YYYY</span>
+            <span class="error-disabled">This field is required</span>
+
+        </div>
+
+    <div class="line-break">
+        <button type="submit" class="btn-date">
+            <img src="src/images/icon-arrow.svg" alt="">
+        </button>
+    </div>
+
+        <div class="show-date">
+            <div>
+                <span class="number-date">
+                    --
+                </span>
+                <span class="date-text">Years</span>
+            </div>
+            <div>
+                <span class="number-date">
+                    --
+                </span>
+                <span class="date-text">Months</span>
+            </div>
+            <div>
+                <span class="number-date">
+                    --
+                </span>
+                <span class="date-text">Days</span>
+
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
