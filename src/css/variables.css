@@ -1,0 +1,8 @@
+:root{
+    --background-secondary-color:  rgb(255, 255, 255);
+    --background-primary-color: rgb(219, 219, 219);
+    --secondary-text-color: rgb(105, 38, 250);
+    --primary-text-color: rgb(20, 20, 20);
+    --error-color: rgb(255, 87, 87);
+    --date-color: rgb(113, 111, 111);
+}
