@@ -15,52 +15,54 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/variables.css">
     <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
 
     <script defer src="src/js/script.js"></script>
 </head>
 <body>
     <section class="container">
-        <div class="date-container">
+        <form id="date-form" class="date-form">
+            <div class="date-container">
+                <div>
+                    <label class="name-date" for="day">Dia</label>
+                    <input type="number" id="day" name="day" placeholder="DD" min="1" max="31" required class="date">
+                </div>
+                <div>
+                    <label class="name-date" for="month">Mês</label>
+                    <input class="date" type="number" id="month" name="month" placeholder="MM" min="1" max="12" required>
+                </div>
+                <div>
+                    <label class="name-date" for="year">Ano</label>
+                    <input class="date" type="number" id="year" name="year" placeholder="AAAA" min="1900" max="2100" required>
+                </div>
+            </div>
 
-            <span class="name-date ">DAY</span>
-            <span class="date placeholder" contenteditable="true">DD</span>
-            <span class="error-disabled">This field is required</span>
+            <button type="submit" class="btn-date">
+                <img src="src/images/icon-arrow.svg" alt="">
+            </button>
 
-            <span class="name-date">MONTH</span>
-            <span class="date placeholder" contenteditable="true">MM</span>
-            <span class="error-disabled">This field is required</span>
+        </form>
 
-            <span class="name-date">YEAR</span>
-            <span class="date placeholder" contenteditable="true">YYYY</span>
-            <span class="error-disabled">This field is required</span>
-
-        </div>
-
-    <div class="line-break">
-        <button type="submit" class="btn-date">
-            <img src="src/images/icon-arrow.svg" alt="">
-        </button>
-    </div>
+        <hr>
 
         <div class="show-date">
             <div>
                 <span class="number-date">
                     --
                 </span>
-                <span class="date-text">Years</span>
+                <span class="date-text">Dias</span>
             </div>
             <div>
                 <span class="number-date">
                     --
                 </span>
-                <span class="date-text">Months</span>
+                <span class="date-text">Meses</span>
             </div>
             <div>
                 <span class="number-date">
                     --
                 </span>
-                <span class="date-text">Days</span>
+                <span class="date-text">Anos</span>
 
             </div>
             
