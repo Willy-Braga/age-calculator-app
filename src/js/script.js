@@ -24,6 +24,7 @@ form.addEventListener('submit', (e) => {
         if (field.value === '') {
             field.errorElement.textContent = field.message;
             field.errorElement.classList.remove('error-disabled');
+
         } else {
             allFieldsEmpty = false; 
         }
@@ -51,9 +52,8 @@ form.addEventListener('submit', (e) => {
     const monthNumber = document.getElementById('monthNumber');
     const yearNumber = document.getElementById('yearNumber');
 
-    const birthDate = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
 
-    function calculateAge(birthDate) {
+    function calculateAge() {
         let date = new Date();
 
         let years = date.getFullYear() - year;
@@ -75,11 +75,9 @@ form.addEventListener('submit', (e) => {
         return { years, months, days };
     }
 
-    const age = calculateAge(birthDate);
+    const age = calculateAge();
 
     if (isValid) {
-        console.log(day, month, year);
-
         dayNumber.textContent = `${age.days}`;
         monthNumber.textContent = `${age.months}`;
         yearNumber.textContent = `${age.years}`;
