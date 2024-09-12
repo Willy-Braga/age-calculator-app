@@ -4,16 +4,23 @@
         height: 90%;
     }
 
+
     .date{
         display: inline-block;
         width: 200px;
         height: 46px;
-        padding: 0;
     }
 
     .btn-date {
         right: 34px;
         left: auto;
+    }
+
+    .input-info {
+        width: 190px;
+        position: absolute;
+        bottom: -20px;
+        margin-left: -200px;
     }
 }
 
@@ -36,5 +43,9 @@
 
     .date {
         width: 260px;
+    }
+
+    .input-info {
+        margin-left: -260px;
     }
 }

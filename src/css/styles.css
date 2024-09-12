@@ -45,11 +45,8 @@ body{
     border-radius: 10px;
     width: 100px;
     height: 60px;
-}
-
-.date::placeholder{
     padding-left: 10px;
-}
+}  
 
 .date:hover, .date:focus{
     border-color: var(--secondary-text-color);
@@ -94,13 +91,14 @@ body{
     color: var(--error-color);
 }
 
-.error-disabled{
+.input-info{
     color: var(--error-color);
-    display: none;
-    position: absolute;
-    top: 60px;
-    font-size: 14px;
-    width: 88px;
-    left: 12px;
-    line-break: normal;
+    font-size: 12px;
+    display: inline-block;
+    width: 86px;
+    margin-left: 18px;
 }
+
+    .error-disabled{
+        display: none !important;;
+    }

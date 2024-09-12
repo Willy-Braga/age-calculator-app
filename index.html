@@ -25,15 +25,18 @@
             <div class="date-container">
                 <div>
                     <label class="name-date" for="day">Dia</label>
-                    <input type="number" id="day" name="day" placeholder="DD" min="1" max="31" required class="date">
+                    <input type="number" id="day" name="day" placeholder="DD" min="1" max="31" class="date">
+                    <span id="error-day" class="input-info error-disabled"></span>
                 </div>
                 <div>
                     <label class="name-date" for="month">Mês</label>
-                    <input class="date" type="number" id="month" name="month" placeholder="MM" min="1" max="12" required>
+                    <input class="date" type="number" id="month" name="month" placeholder="MM" min="1" max="12" >
+                    <span id="error-month" class="input-info error-disabled"></span>
                 </div>
                 <div>
                     <label class="name-date" for="year">Ano</label>
-                    <input class="date" type="number" id="year" name="year" placeholder="AAAA" min="1900" max="2100" required>
+                    <input class="date" type="number" id="year" name="year" placeholder="AAAA" min="1900" max="2100" >
+                    <span id="error-year" class="input-info error-disabled"></span>
                 </div>
             </div>
 
@@ -46,24 +49,23 @@
         <hr>
 
         <div class="show-date">
-            <div>
-                <span class="number-date">
+                        <div>
+                <span class="number-date" id="yearNumber">
                     --
                 </span>
-                <span class="date-text">Dias</span>
+                <span class="date-text">Anos</span>
             </div>
             <div>
-                <span class="number-date">
+                <span class="number-date" id="monthNumber">
                     --
                 </span>
                 <span class="date-text">Meses</span>
             </div>
             <div>
-                <span class="number-date">
+                <span class="number-date" id="dayNumber">
                     --
                 </span>
-                <span class="date-text">Anos</span>
-
+                <span class="date-text">Dias</span>
             </div>
             
         </div>
