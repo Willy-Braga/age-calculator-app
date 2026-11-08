@@ -1,0 +1,6 @@
+# Configuração mínima para Supabase CLI (supabase link / supabase db push)
+project_id = "ofertahub-ai"
+
+[auth]
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173/redefinir-senha"]
